@@ -1,2 +1,2 @@
-# Android-Cholesterol-Control
+# Cholesterol Control
 A cholesterol and uric acid control app
