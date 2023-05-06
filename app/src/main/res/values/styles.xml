@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Divider   -->
+
+    <style name="DividerStyle">
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <!-- Texts   -->
+
+    <style name="LabelStyle" parent="android:Widget.TextView">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="MicroLabelStyle" parent="LabelStyle">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="TittleStyle" parent="LabelStyle">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="NormalStyle" parent="LabelStyle">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="LinkStyle" parent="LabelStyle">
+        <item name="android:textColor">@color/link</item>
+        <item name="android:autoLink">web</item>
+    </style>
+
+    <!-- Inputs   -->
+
+    <style name="TextInputStyle" parent="ThemeOverlay.Material3.TextInputEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:ellipsize">start</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="PasswordInputStyle" parent="TextInputStyle">
+        <item name="android:inputType">textPassword</item>
+    </style>
+
+    <style name="EmailInputStyle" parent="TextInputStyle">
+        <item name="android:inputType">textEmailAddress</item>
+    </style>
+
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+
+    <style name="PasswordInputLayoutStyle" parent="TextInputLayoutStyle">
+        <item name="android:hint">@string/password</item>
+        <item name="android:inputType">textPassword</item>
+    </style>
+
+    <style name="EmailInputLayoutStyle" parent="TextInputLayoutStyle">
+        <item name="android:hint">@string/email</item>
+        <item name="android:inputType">textEmailAddress</item>
+    </style>
+
+    <!-- Buttons   -->
+
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="checkbox_theme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorControlNormal">@color/secondary_color</item>
+        <item name="colorControlActivated">@color/secondary_color</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Dialogs   -->
+
+    <style name="full_screen_dialog" parent="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+</resources>
