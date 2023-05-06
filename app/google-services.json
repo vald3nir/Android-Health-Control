@@ -1,20 +1,21 @@
 {
   "project_info": {
     "project_number": "169877430952",
+    "firebase_url": "https://cholesterol-control-default-rtdb.firebaseio.com",
     "project_id": "cholesterol-control",
     "storage_bucket": "cholesterol-control.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:169877430952:android:f977226f2433cef8efd89d",
+        "mobilesdk_app_id": "1:169877430952:android:219e77c8f81111cbefd89d",
         "android_client_info": {
-          "package_name": "com.vald3nir.cholesterol_control"
+          "package_name": "com.vald3nir"
         }
       },
       "oauth_client": [
         {
-          "client_id": "169877430952-vaj8p7i5fnl7copd3chc9dotc1n1t70r.apps.googleusercontent.com",
+          "client_id": "169877430952-ugi5s16ufb2is23fdac47042mif1ho7d.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
@@ -27,7 +28,36 @@
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "169877430952-vaj8p7i5fnl7copd3chc9dotc1n1t70r.apps.googleusercontent.com",
+              "client_id": "169877430952-ugi5s16ufb2is23fdac47042mif1ho7d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:169877430952:android:f977226f2433cef8efd89d",
+        "android_client_info": {
+          "package_name": "com.vald3nir.cholesterol_control"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "169877430952-ugi5s16ufb2is23fdac47042mif1ho7d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTLQiPrJ4HGt8kP0x6A60Xa0qxUAkjD7c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "169877430952-ugi5s16ufb2is23fdac47042mif1ho7d.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
