@@ -1,7 +1,7 @@
 package com.vald3nir.cholesterol_control.presentation.auth
 
 import android.os.Bundle
-import com.vald3nir.R
+import com.vald3nir.cholesterol_control.R
 import com.vald3nir.cholesterol_control.domain.common.view.BaseActivity
 
 class AuthActivity : BaseActivity() {

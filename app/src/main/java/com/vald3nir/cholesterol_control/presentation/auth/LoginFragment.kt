@@ -4,12 +4,12 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.vald3nir.cholesterol_control.databinding.FragmentLoginBinding
 import com.vald3nir.cholesterol_control.domain.common.view.BaseFragment
 import com.vald3nir.core_ui.extensions.actionDoneListener
 import com.vald3nir.core_ui.extensions.afterTextChanged
 import com.vald3nir.core_ui.extensions.format
 import com.vald3nir.core_ui.extensions.hideKeyboard
-import com.vald3nir.databinding.FragmentLoginBinding
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class LoginFragment : BaseFragment() {

@@ -5,7 +5,7 @@ import android.content.Context
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.vald3nir.R
+import com.vald3nir.cholesterol_control.R
 import com.vald3nir.cholesterol_control.data.dtos.ClientDTO
 import com.vald3nir.cholesterol_control.data.dtos.LoginDTO
 import com.vald3nir.cholesterol_control.domain.common.view.BaseViewModel

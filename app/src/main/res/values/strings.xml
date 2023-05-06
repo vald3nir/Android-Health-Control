@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Base Project</string>
+    <string name="app_name">Colesterol</string>
 
     <!-- Login -->
     <string name="invalid_email">Email não é válido</string>
