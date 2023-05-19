@@ -1,20 +1,8 @@
 <resources>
-    <string name="app_name">Colesterol</string>
-
-    <!-- Login -->
-    <string name="invalid_email">Email não é válido</string>
-    <string name="invalid_name">Nome não é válido</string>
-    <string name="invalid_password">A Senha deve ser maior que 5 caracteres</string>
-    <string name="passwords_not_equals">As senhas não são iguais</string>
-    <string name="login">Login</string>
-    <string name="register">Cadastrar</string>
-    <string name="tell_your_name">Informe seu nome</string>
-    <string name="tell_your_email">Informe seu email</string>
-    <string name="choose_a_password">Informe um senha</string>
-    <string name="confirm_your_password">Confirme sua senha</string>
-    <string name="email">Email</string>
-    <string name="password">Senha</string>
-    <string name="remember_login">Lembrar do login</string>
-    <string name="prompt_confirm_password">Confirmar senha</string>
-
+    <string name="app_name">Saúde</string>
+    <string name="exam_history">Histórico de Exames</string>
+    <string name="exam_detail">Detalhe do Exames</string>
+    <string name="new_exam">Novo Exame</string>
+    <string name="update_exam">Atualizar Exame</string>
+    <string name="update">Atualizar</string>
 </resources>

@@ -1,22 +1,15 @@
 <resources>
 
-    <style name="Theme.BaseProject" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/main_color</item>
-        <item name="colorPrimaryVariant">@color/main_color</item>
-        <item name="colorOnPrimary">@color/main_color</item>
-        <!-- Secondary brand color. -->
+    <style name="Base.Theme.AndroidHealthControl" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/secondary_color</item>
+        <item name="colorPrimaryVariant">@color/secondary_color</item>
+        <item name="colorOnPrimary">@color/secondary_color</item>
         <item name="colorSecondary">@color/secondary_color</item>
         <item name="colorSecondaryVariant">@color/secondary_color</item>
         <item name="colorOnSecondary">@color/secondary_color</item>
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
+        <item name="android:statusBarColor">@color/secondary_color</item>
     </style>
 
-    <style name="Theme.BaseProject.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
+    <style name="Theme.AndroidHealthControl" parent="Base.Theme.AndroidHealthControl" />
 
 </resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.vald3nir.health_control.presentation.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/redirect_to_examDetailFragment"
+            app:destination="@id/examDetailFragment" />
+        <action
+            android:id="@+id/redirect_to_addNewExamFragment"
+            app:destination="@id/addNewExamFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/examDetailFragment"
+        android:name="com.vald3nir.health_control.presentation.ExamDetailFragment"
+        android:label="fragment_exam_input"
+        tools:layout="@layout/fragment_exam_detail" />
+
+    <fragment
+        android:id="@+id/addNewExamFragment"
+        android:name="com.vald3nir.health_control.presentation.AddNewExamFragment"
+        android:label="fragment_add_new_exam"
+        tools:layout="@layout/fragment_add_new_exam" />
+
+</navigation>

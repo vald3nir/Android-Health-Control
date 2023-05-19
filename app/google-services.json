@@ -1,63 +1,33 @@
 {
   "project_info": {
-    "project_number": "169877430952",
-    "firebase_url": "https://cholesterol-control-default-rtdb.firebaseio.com",
-    "project_id": "cholesterol-control",
-    "storage_bucket": "cholesterol-control.appspot.com"
+    "project_number": "377295861187",
+    "project_id": "health-control-55296",
+    "storage_bucket": "health-control-55296.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:169877430952:android:8eabb8e5645403f1efd89d",
+        "mobilesdk_app_id": "1:377295861187:android:0209ddb979a7b4e75a7976",
         "android_client_info": {
-          "package_name": "com.vald3nir"
+          "package_name": "com.vald3nir.health_control"
         }
       },
       "oauth_client": [
         {
-          "client_id": "169877430952-6t3ipkmuu7noqa73dugseqcnrk9phs46.apps.googleusercontent.com",
+          "client_id": "377295861187-sj92kpmhh1htkeeguq7jtipfa83hkjcv.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAR1-P2KUAJrMfTEvw8SHk7A26AOEntut4"
+          "current_key": "AIzaSyC7n5HJ0EwHYpRz5b7k7Y5mtdhbWbPeUoI"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "169877430952-6t3ipkmuu7noqa73dugseqcnrk9phs46.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:169877430952:android:f977226f2433cef8efd89d",
-        "android_client_info": {
-          "package_name": "com.vald3nir.cholesterol_control"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "169877430952-6t3ipkmuu7noqa73dugseqcnrk9phs46.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyAR1-P2KUAJrMfTEvw8SHk7A26AOEntut4"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "169877430952-6t3ipkmuu7noqa73dugseqcnrk9phs46.apps.googleusercontent.com",
+              "client_id": "377295861187-3hchu81gt0ti4oatp0neh2f9gs6qhlcd.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

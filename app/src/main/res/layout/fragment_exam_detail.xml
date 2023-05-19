@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_color">
+
+    <com.vald3nir.core_ui.components.CustomNavigationComponent
+        android:id="@+id/navigator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:nvTitleColor="@color/secondary_color" />
+
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/screen_margin"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/navigator">
+
+        <com.vald3nir.core_ui.components.atoms.CustomImageView
+            android:id="@+id/im_logo"
+            android:layout_width="@dimen/dashboard_icon_size"
+            android:layout_height="@dimen/dashboard_icon_size"
+            android:src="@drawable/ic_logo" />
+
+        <TextView
+            android:id="@+id/txv_subtitle"
+            style="@style/NormalStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/screen_margin"
+            android:text="Preencha os campos abaixo para incluir os resultados do seu exame de sangue."
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/txv_edit_exam"
+            style="@style/NormalStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/screen_margin"
+            android:gravity="center"
+            android:text="Editar exame"
+            android:textColor="@color/secondary_color"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+
+    <com.vald3nir.health_control.domain.common.components.ExamInputComponent
+        android:id="@+id/cp_inputs"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/screen_margin"
+        android:layout_marginVertical="@dimen/screen_margin"
+        app:input_editable="true"
+        app:layout_constraintBottom_toTopOf="@+id/btn_confirm"
+        app:layout_constraintTop_toBottomOf="@+id/ll_header" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_confirm"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/screen_margin"
+        android:layout_marginBottom="10dp"
+        android:background="@color/secondary_color"
+        android:text="@string/update"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,12 +13,12 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.BaseProject"
+        android:theme="@style/Theme.AndroidHealthControl"
         tools:targetApi="31">
         <activity
-            android:name=".presentation.auth.AuthActivity"
+            android:name=".presentation.HomeActivity"
             android:exported="true"
-            android:theme="@style/Theme.BaseProject.NoActionBar">
+            android:fitsSystemWindows="false">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

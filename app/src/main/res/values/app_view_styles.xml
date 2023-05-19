@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Divider -->
+
+    <style name="DividerStyle">
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/green_light</item>
+    </style>
+
+    <!-- Checkbox -->
+
+    <style name="checkbox_theme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorControlNormal">@color/secondary_color</item>
+        <item name="colorControlActivated">@color/secondary_color</item>
+        <item name="android:textColor">@color/secondary_color</item>
+    </style>
+
+    <!-- Inputs   -->
+
+    <style name="TextInputStyle" parent="ThemeOverlay.Material3.TextInputEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/secondary_color</item>
+
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="colorControlNormal">@color/secondary_color</item>
+        <item name="colorControlActivated">@color/secondary_color</item>
+        <item name="colorControlHighlight">@color/secondary_color</item>
+        
+        <item name="android:textColorHint">@color/secondary_color</item>
+        <item name="android:ellipsize">start</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="NumberInputStyle" parent="TextInputStyle">
+        <item name="android:inputType">numberDecimal</item>
+    </style>
+
+    <style name="PasswordInputStyle" parent="TextInputStyle">
+        <item name="android:inputType">textPassword</item>
+    </style>
+
+    <style name="EmailInputStyle" parent="TextInputStyle">
+        <item name="android:inputType">textEmailAddress</item>
+    </style>
+
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/secondary_color</item>
+        <item name="android:textColorHint">@color/secondary_color</item>
+        <item name="boxCornerRadiusBottomEnd">5dp</item>
+        <item name="boxCornerRadiusBottomStart">5dp</item>
+        <item name="boxCornerRadiusTopEnd">5dp</item>
+        <item name="boxCornerRadiusTopStart">5dp</item>
+        <item name="boxStrokeColor">@color/secondary_color</item>
+        <item name="hintTextColor">@color/secondary_color</item>
+    </style>
+
+</resources>

@@ -1,17 +1,16 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
-    id 'androidx.navigation.safeargs.kotlin'
     id 'com.google.gms.google-services'
     id 'com.google.firebase.crashlytics'
-    id 'com.google.firebase.appdistribution'
+    id 'androidx.navigation.safeargs.kotlin'
 }
 
 android {
-    namespace 'com.vald3nir.cholesterol_control'
+    namespace 'com.vald3nir.health_control'
     compileSdk 33
     defaultConfig {
-        applicationId "com.vald3nir"
+        applicationId "com.vald3nir.health_control"
         minSdk 24
         targetSdk 33
         versionCode 1
@@ -62,13 +61,6 @@ dependencies {
     // Modules
     implementation project(path: ':toolkit:core-repository')
     implementation project(path: ':toolkit:core-ui')
-
-    // Firebase
-    implementation 'com.google.firebase:firebase-crashlytics-ktx:18.3.7'
-    implementation 'com.google.firebase:firebase-analytics-ktx:21.2.2'
-
-    // Google Firebase
-    implementation platform('com.google.firebase:firebase-bom:31.4.0')
-    implementation 'com.google.firebase:firebase-auth-ktx'
-    implementation 'com.google.android.gms:play-services-auth:20.5.0'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx:18.3.2'
+    implementation 'com.google.firebase:firebase-analytics-ktx:21.2.0'
 }

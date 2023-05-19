@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edt_date_layout"
+            style="@style/TextInputLayoutStyle"
+            android:hint="Data do exame">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_date"
+                style="@style/TextInputStyle"
+                tools:text="20/03/2023" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edt_total_cholesterol_layout"
+            style="@style/TextInputLayoutStyle"
+            android:layout_marginTop="@dimen/screen_margin"
+            android:hint="Colesterol Total">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_total_cholesterol"
+                style="@style/NumberInputStyle"
+                tools:text="150" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edt_hdl_layout"
+            style="@style/TextInputLayoutStyle"
+            android:layout_marginTop="@dimen/screen_margin"
+            android:hint="HDL-D">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_hdl"
+                style="@style/NumberInputStyle"
+                tools:text="150" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edt_not_hdl_layout"
+            style="@style/TextInputLayoutStyle"
+            android:layout_marginTop="@dimen/screen_margin"
+            android:hint="Não-HDL">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_not_hdl"
+                style="@style/NumberInputStyle"
+                tools:text="150" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edt_ldl_layout"
+            style="@style/TextInputLayoutStyle"
+            android:layout_marginTop="@dimen/screen_margin"
+            android:hint="LDL">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_ldl"
+                style="@style/NumberInputStyle"
+                tools:text="150" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edt_triglycerides_layout"
+            style="@style/TextInputLayoutStyle"
+            android:layout_marginTop="@dimen/screen_margin"
+            android:hint="Triglicérides">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_triglycerides"
+                style="@style/NumberInputStyle"
+                tools:text="150" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edt_uric_acid_layout"
+            style="@style/TextInputLayoutStyle"
+            android:layout_marginTop="@dimen/screen_margin"
+            android:hint="Ácido Úrico">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_uric_acid"
+                style="@style/NumberInputStyle"
+                tools:text="150" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+</ScrollView>
