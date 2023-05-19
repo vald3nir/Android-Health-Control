@@ -7,12 +7,20 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:377295861187:android:0209ddb979a7b4e75a7976",
+        "mobilesdk_app_id": "1:377295861187:android:eb175799f7e3a7975a7976",
         "android_client_info": {
           "package_name": "com.vald3nir.health_control"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "377295861187-b9ui7lpki3luqj0n73061thj3nicug1f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vald3nir.health_control",
+            "certificate_hash": "20116f2e257f9de982e6a3a132e7a391e10fb81f"
+          }
+        },
         {
           "client_id": "377295861187-sj92kpmhh1htkeeguq7jtipfa83hkjcv.apps.googleusercontent.com",
           "client_type": 3
