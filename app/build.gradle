@@ -61,6 +61,12 @@ dependencies {
     // Modules
     implementation project(path: ':toolkit:core-repository')
     implementation project(path: ':toolkit:core-ui')
-    implementation 'com.google.firebase:firebase-crashlytics-ktx:18.3.2'
-    implementation 'com.google.firebase:firebase-analytics-ktx:21.2.0'
+
+    // Google
+    implementation 'com.google.firebase:firebase-crashlytics-ktx:18.3.7'
+    implementation 'com.google.firebase:firebase-analytics-ktx:21.2.2'
+
+    // remover
+//    implementation 'com.google.firebase:firebase-auth-ktx:21.1.0'
+//    implementation 'com.google.firebase:firebase-database-ktx:20.1.0'
 }
