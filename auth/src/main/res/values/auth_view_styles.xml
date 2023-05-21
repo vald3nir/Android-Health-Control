@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="PasswordInputStyle" parent="TextInputStyle">
+        <item name="android:inputType">textPassword</item>
+    </style>
+
+    <style name="EmailInputStyle" parent="TextInputStyle">
+        <item name="android:inputType">textEmailAddress</item>
+    </style>
+
+    <style name="PasswordInputLayoutStyle" parent="TextInputLayoutStyle">
+        <item name="android:hint">@string/password</item>
+        <item name="android:inputType">textPassword</item>
+    </style>
+
+    <style name="EmailInputLayoutStyle" parent="TextInputLayoutStyle">
+        <item name="android:hint">@string/email</item>
+        <item name="android:inputType">textEmailAddress</item>
+    </style>
+
+</resources>

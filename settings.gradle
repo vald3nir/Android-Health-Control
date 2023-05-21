@@ -14,5 +14,7 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Android-Health-Control"
 include ':app'
+include ':auth'
+include ':commons'
 include ':toolkit:core-ui'
 include ':toolkit:core-repository'

@@ -1,7 +1,6 @@
-package com.vald3nir.health_control.presentation
+package com.vald3nir.health_control.presentation.home
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,6 +8,7 @@ import com.vald3nir.core_ui.CoreFragment
 import com.vald3nir.health_control.R
 import com.vald3nir.health_control.databinding.FragmentAddNewExamBinding
 import org.koin.androidx.viewmodel.ext.android.viewModel
+import com.vald3nir.commons.R as RCommons
 
 
 class AddNewExamFragment : CoreFragment() {
@@ -39,6 +39,6 @@ class AddNewExamFragment : CoreFragment() {
     private fun setupNavigator(titleID: Int) = with(binding.navigator) {
         setTitle(getString(titleID))
         enableClickEvents(requireCoreActivity())
-        updateIconsCor(R.color.secondary_color)
+        updateIconsCor(RCommons.color.secondary_color)
     }
 }

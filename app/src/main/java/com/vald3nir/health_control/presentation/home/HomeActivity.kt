@@ -1,4 +1,4 @@
-package com.vald3nir.health_control.presentation
+package com.vald3nir.health_control.presentation.home
 
 import android.os.Bundle
 import com.vald3nir.core_ui.CoreActivity

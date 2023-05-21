@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">Saúde</string>
     <string name="exam_history">Histórico de Exames</string>
     <string name="exam_detail">Detalhe do Exames</string>
     <string name="new_exam">Novo Exame</string>

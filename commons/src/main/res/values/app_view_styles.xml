@@ -28,7 +28,7 @@
         <item name="colorControlNormal">@color/secondary_color</item>
         <item name="colorControlActivated">@color/secondary_color</item>
         <item name="colorControlHighlight">@color/secondary_color</item>
-        
+
         <item name="android:textColorHint">@color/secondary_color</item>
         <item name="android:ellipsize">start</item>
         <item name="android:singleLine">true</item>
@@ -36,14 +36,6 @@
 
     <style name="NumberInputStyle" parent="TextInputStyle">
         <item name="android:inputType">numberDecimal</item>
-    </style>
-
-    <style name="PasswordInputStyle" parent="TextInputStyle">
-        <item name="android:inputType">textPassword</item>
-    </style>
-
-    <style name="EmailInputStyle" parent="TextInputStyle">
-        <item name="android:inputType">textEmailAddress</item>
     </style>
 
     <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">

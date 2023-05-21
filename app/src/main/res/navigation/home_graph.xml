@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/dashboardFragment"
-        android:name="com.vald3nir.health_control.presentation.DashboardFragment"
+        android:name="com.vald3nir.health_control.presentation.home.DashboardFragment"
         android:label="fragment_dashboard"
         tools:layout="@layout/fragment_dashboard">
         <action
@@ -20,13 +20,13 @@
 
     <fragment
         android:id="@+id/examDetailFragment"
-        android:name="com.vald3nir.health_control.presentation.ExamDetailFragment"
+        android:name="com.vald3nir.health_control.presentation.home.ExamDetailFragment"
         android:label="fragment_exam_input"
         tools:layout="@layout/fragment_exam_detail" />
 
     <fragment
         android:id="@+id/addNewExamFragment"
-        android:name="com.vald3nir.health_control.presentation.AddNewExamFragment"
+        android:name="com.vald3nir.health_control.presentation.home.AddNewExamFragment"
         android:label="fragment_add_new_exam"
         tools:layout="@layout/fragment_add_new_exam" />
 

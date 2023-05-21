@@ -1,4 +1,4 @@
-package com.vald3nir.health_control.presentation
+package com.vald3nir.health_control.presentation.home
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

@@ -1,7 +1,8 @@
-package com.vald3nir.health_control.presentation
+package com.vald3nir.health_control.presentation.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
+import com.vald3nir.commons.R as RCommons
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.isVisible
@@ -64,7 +65,7 @@ class ExamDetailFragment : CoreFragment() {
 
     private fun setupNavigator() = with(binding.navigator) {
         enableClickEvents(requireCoreActivity())
-        updateIconsCor(R.color.secondary_color)
+        updateIconsCor(RCommons.color.secondary_color)
         when (viewModel.state) {
             ExamDetailState.SeeExam -> {
                 setTitle(R.string.exam_detail)

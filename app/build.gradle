@@ -59,12 +59,15 @@ dependencies {
     implementation "io.insert-koin:koin-androidx-viewmodel:2.2.3"
 
     // Modules
-    implementation project(path: ':toolkit:core-repository')
-    implementation project(path: ':toolkit:core-ui')
+    implementation project(path: ':auth')
+    implementation project(path: ':commons')
 
     // Google
     implementation 'com.google.firebase:firebase-crashlytics-ktx:18.3.7'
     implementation 'com.google.firebase:firebase-analytics-ktx:21.2.2'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
     // remover
 //    implementation 'com.google.firebase:firebase-auth-ktx:21.1.0'

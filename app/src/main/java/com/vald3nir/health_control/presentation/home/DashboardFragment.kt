@@ -1,4 +1,4 @@
-package com.vald3nir.health_control.presentation
+package com.vald3nir.health_control.presentation.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -13,7 +13,6 @@ import com.vald3nir.health_control.databinding.ItemViewDashboardBinding
 import com.vald3nir.health_control.domain.common.diff.examDiffUtil
 import com.vald3nir.health_control.domain.common.extensions.setTextColorInt
 import org.koin.androidx.viewmodel.ext.android.sharedViewModel
-
 
 class DashboardFragment : CoreFragment() {
 
