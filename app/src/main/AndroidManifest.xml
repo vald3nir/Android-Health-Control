@@ -15,8 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidHealthControl"
         tools:targetApi="31">
+
         <activity
-            android:name=".presentation.HomeActivity"
+            android:name=".presentation.MainActivity"
             android:exported="true"
             android:fitsSystemWindows="false">
             <intent-filter>
@@ -24,6 +25,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".presentation.HomeActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>
