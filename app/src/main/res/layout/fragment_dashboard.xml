@@ -31,23 +31,53 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginVertical="@dimen/screen_margin"
-        app:layout_constraintBottom_toTopOf="@+id/btn_include"
+        app:layout_constraintBottom_toTopOf="@+id/cl_buttons"
         app:layout_constraintTop_toBottomOf="@+id/im_logo"
         tools:itemCount="5"
         tools:listitem="@layout/item_view_dashboard" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_include"
-        style="@style/ButtonStyle"
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_buttons"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/screen_margin"
-        android:layout_marginBottom="10dp"
-        android:background="@color/secondary_color"
-        android:text="@string/new_exam"
-        android:textColor="@color/white"
+        android:paddingVertical="@dimen/screen_margin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.vald3nir.core_ui.components.atoms.CustomButton
+            android:id="@+id/btn_logout"
+            style="@style/ButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/screen_margin"
+            android:background="@color/red"
+            android:text="@string/exit"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_new_exame"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.vald3nir.core_ui.components.atoms.CustomButton
+            android:id="@+id/btn_new_exame"
+            style="@style/ButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/screen_margin"
+            android:background="@color/secondary_color"
+            android:text="@string/new_exam"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_logout"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

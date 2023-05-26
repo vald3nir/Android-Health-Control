@@ -79,10 +79,15 @@ class RegisterFragment : CoreFragment() {
             name = edtName.text.toString(),
             email = edtEmail.text.toString(),
             password = edtPassword.text.toString(),
-            confirmPassword = edtConfirmPassword.text.toString()
-        ) {
-            btnRegister.hideLoading()
-            showMessage(it?.message)
-        }
+            confirmPassword = edtConfirmPassword.text.toString(),
+            onSuccess = {
+                showMessage("Resgistro realizado com sucesso!")
+                activity?.onBackPressedDispatcher?.onBackPressed()
+            },
+            onError = {
+                btnRegister.hideLoading()
+                showMessage(it?.message)
+            }
+        )
     }
 }

@@ -2,28 +2,22 @@ package com.vald3nir.auth.commons.use_cases
 
 import android.app.Activity
 import android.content.Context
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 import com.vald3nir.auth.data.dtos.ClientDTO
 import com.vald3nir.auth.data.dtos.LoginDTO
 import com.vald3nir.auth.data.repository.AuthRepository
-import com.vald3nir.core_repository.firebase.FirebaseAuthenticator
 
 class AuthUseCaseImpl(
     private val repository: AuthRepository,
 ) : AuthUseCase {
 
-    private val authenticator = FirebaseAuthenticator()
 
-    override suspend fun disconnect() {
-        authenticator.disconnect()
+    override fun checkUserLogged(): Boolean {
+        return Firebase.auth.currentUser != null
     }
 
-    override suspend fun getUserID(): String? {
-        return authenticator.getUserID()
-    }
-
-    override suspend fun checkUserLogged(): Boolean {
-        return authenticator.checkUserLogged()
-    }
+    override fun getUserEmail() = repository.getUserEmail()
 
     override suspend fun login(
         activity: Activity?,
@@ -41,6 +35,10 @@ class AuthUseCaseImpl(
         } else {
             onError.invoke(Exception("Activity null"))
         }
+    }
+
+    override fun logout() {
+        repository.logout()
     }
 
     override suspend fun loadLoginData(context: Context?): LoginDTO? {
@@ -75,13 +73,5 @@ class AuthUseCaseImpl(
         onSuccess: () -> Unit,
         onError: (e: Exception?) -> Unit
     ) {
-        activity?.let {
-            repository.registerClient(
-                activity = it,
-                clientDTO = clientDTO,
-                onSuccess = onSuccess,
-                onError = onError
-            )
-        }
     }
 }

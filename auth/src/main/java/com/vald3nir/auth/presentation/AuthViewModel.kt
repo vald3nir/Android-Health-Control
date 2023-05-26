@@ -8,7 +8,6 @@ import androidx.lifecycle.viewModelScope
 import com.vald3nir.auth.R
 import com.vald3nir.auth.commons.forms.DataUserInputForm
 import com.vald3nir.auth.commons.use_cases.AuthUseCase
-import com.vald3nir.auth.data.dtos.ClientDTO
 import com.vald3nir.auth.data.dtos.LoginDTO
 import com.vald3nir.core_ui.CoreViewModel
 import com.vald3nir.core_ui.validators.isEmailValid
@@ -40,6 +39,7 @@ class AuthViewModel(
         email: String,
         password: String,
         rememberLogin: Boolean,
+        onSuccess: () -> Unit,
         onError: (e: Exception?) -> Unit
     ) {
         viewModelScope.launch {
@@ -54,6 +54,7 @@ class AuthViewModel(
                 authUseCase.login(activity, loginDTO,
                     onSuccess = {
                         saveLoginData(activity, loginDTO)
+                        onSuccess.invoke()
                     },
                     onError = {
                         onError.invoke(it)
@@ -98,6 +99,7 @@ class AuthViewModel(
         email: String,
         password: String,
         confirmPassword: String,
+        onSuccess: () -> Unit,
         onError: (e: Exception?) -> Unit
     ) {
         if (checkRegisterData(
@@ -113,37 +115,32 @@ class AuthViewModel(
                     activity,
                     email = email,
                     password = password,
-                    onSuccess = {
-                        registerUserType(
-                            activity,
-                            name = name,
-                            email = email,
-                        )
-                    },
-                    onError = { onError.invoke(it) }
+                    onSuccess = onSuccess,
+                    onError = onError,
                 )
             }
         }
     }
 
     private fun registerUserType(
+        onSuccess: () -> Unit,
         activity: Activity?,
         name: String,
         email: String,
     ) {
-        viewModelScope.launch {
-            authUseCase.registerClient(
-                activity,
-                clientDTO = ClientDTO(
-                    name = name,
-                    userID = authUseCase.getUserID().orEmpty(),
-                    email = email,
-                ),
-                onSuccess = { activity?.onBackPressed() },
-                onError = { //showError(it)
-                }
-            )
-        }
+//        viewModelScope.launch {
+//            authUseCase.registerClient(
+//                activity,
+//                clientDTO = ClientDTO(
+//                    name = name,
+//                    userID = authUseCase.getUserID().orEmpty(),
+//                    email = email,
+//                ),
+//                onSuccess = onSuccess,
+//                onError = { //showError(it)
+//                }
+//            )
+//        }
     }
 
     fun checkRegisterData(

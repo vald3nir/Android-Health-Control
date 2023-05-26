@@ -8,6 +8,7 @@ import com.vald3nir.core_ui.CoreFragment
 import com.vald3nir.core_ui.components.CustomDifferAdapter
 import com.vald3nir.core_ui.extensions.setupDefaultLayoutManager
 import com.vald3nir.health_control.data.dto.ExamDTO
+import com.vald3nir.health_control.data.enums.ExamDetailState
 import com.vald3nir.health_control.databinding.FragmentDashboardBinding
 import com.vald3nir.health_control.databinding.ItemViewDashboardBinding
 import com.vald3nir.health_control.domain.common.diff.examDiffUtil
@@ -52,7 +53,13 @@ class DashboardFragment : CoreFragment() {
     private fun initViews() = with(binding) {
         rvExams.setupDefaultLayoutManager()
         rvExams.adapter = dashboardAdapter
-        btnInclude.setOnClickListener { redirectToExamDetailFragment() }
+        btnNewExame.setOnClickListener { redirectToExamDetailFragment() }
+        btnLogout.setOnClickListener { logout() }
+    }
+
+    private fun logout() {
+        viewModel.logout()
+        activity?.finish()
     }
 
     private fun ItemViewDashboardBinding.bindItem(exam: ExamDTO) {

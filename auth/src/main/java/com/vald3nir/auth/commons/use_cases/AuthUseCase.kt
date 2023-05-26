@@ -7,11 +7,9 @@ import com.vald3nir.auth.data.dtos.LoginDTO
 
 interface AuthUseCase {
 
-    suspend fun disconnect()
+    fun checkUserLogged(): Boolean
 
-    suspend fun checkUserLogged(): Boolean
-
-    suspend fun getUserID(): String?
+    fun getUserEmail(): String?
 
     suspend fun login(
         activity: Activity?,
@@ -19,6 +17,8 @@ interface AuthUseCase {
         onSuccess: () -> Unit,
         onError: (e: Exception?) -> Unit,
     )
+
+    fun logout()
 
     suspend fun loadLoginData(context: Context?): LoginDTO?
 

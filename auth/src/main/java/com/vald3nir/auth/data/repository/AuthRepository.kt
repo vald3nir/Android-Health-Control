@@ -3,9 +3,10 @@ package com.vald3nir.auth.data.repository
 import android.app.Activity
 import android.content.Context
 import com.vald3nir.auth.data.dtos.LoginDTO
-import com.vald3nir.auth.data.dtos.ClientDTO
 
 interface AuthRepository {
+
+    fun getUserEmail(): String?
 
     suspend fun login(
         activity: Activity,
@@ -13,6 +14,8 @@ interface AuthRepository {
         onSuccess: () -> Unit,
         onError: (e: Exception?) -> Unit,
     )
+
+    fun logout()
 
     suspend fun loadLoginData(context: Context?): LoginDTO?
 
@@ -22,13 +25,6 @@ interface AuthRepository {
         activity: Activity,
         email: String,
         password: String,
-        onSuccess: () -> Unit,
-        onError: (e: Exception?) -> Unit,
-    )
-
-    suspend fun registerClient(
-        activity: Activity,
-        clientDTO: ClientDTO,
         onSuccess: () -> Unit,
         onError: (e: Exception?) -> Unit,
     )

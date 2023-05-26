@@ -1,11 +1,11 @@
 package com.vald3nir.health_control.di
 
 import com.vald3nir.health_control.presentation.home.HomeViewModel
+import com.vald3nir.health_control.presentation.splash.SplashViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
-fun homeModule() = module {
-    viewModel { HomeViewModel() }
-//            single<AuthRepository> { AuthRepositoryImpl(get()) }
-//            single<AuthUseCase> { AuthUseCaseImpl(get()) }
+fun appModule() = module {
+    viewModel { SplashViewModel(get()) }
+    viewModel { HomeViewModel(get()) }
 }

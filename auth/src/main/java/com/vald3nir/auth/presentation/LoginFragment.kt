@@ -17,8 +17,7 @@ class LoginFragment : CoreFragment() {
     private lateinit var binding: FragmentLoginBinding
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View {
         binding = FragmentLoginBinding.inflate(inflater, container, false)
         return binding.root
@@ -67,23 +66,23 @@ class LoginFragment : CoreFragment() {
     private fun loginDataChanged() = with(binding) {
         clearError()
         viewModel.checkLoginData(
-            activity,
-            edtEmail.text.format(),
-            edtPassword.text.format()
+            activity, edtEmail.text.format(), edtPassword.text.format()
         )
     }
 
     private fun login() = with(binding) {
         hideKeyboard()
-       // (activity as? AuthActivity)?.closeAuthFlow()
-        viewModel.login(
-            requireCoreActivity(),
+        viewModel.login(requireCoreActivity(),
             email = edtEmail.text.format(),
             password = edtPassword.text.format(),
-            rememberLogin = cbRememberLogin.isChecked
-        ) {
-            btnLogin.hideLoading()
-            showMessage(it?.message)
-        }
+            rememberLogin = cbRememberLogin.isChecked,
+            onSuccess = {
+                (activity as? AuthActivity)?.closeAuthFlow()
+            },
+            onError = {
+                btnLogin.hideLoading()
+                showMessage(it?.message)
+            })
     }
+
 }

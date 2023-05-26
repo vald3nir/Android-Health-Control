@@ -3,10 +3,13 @@ package com.vald3nir.health_control.presentation.home
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.vald3nir.auth.commons.use_cases.AuthUseCase
 import com.vald3nir.health_control.data.dto.ExamDTO
 import com.vald3nir.health_control.data.dto.ExamStatus
+import com.vald3nir.health_control.data.enums.ExamDetailState
 
-class HomeViewModel : ViewModel() {
+class HomeViewModel(private val authUseCase: AuthUseCase) : ViewModel() {
+
 
     private val _exams = MutableLiveData<List<ExamDTO>>()
     val exams: LiveData<List<ExamDTO>> = _exams
@@ -81,9 +84,22 @@ class HomeViewModel : ViewModel() {
                 triglycerides = 118,
                 uricAcid = 6.6f,
                 status = ExamStatus.Normal
+            ),
+            ExamDTO(
+                date = "25/05/2023",
+                totalCholesterol = 207,
+                HDL_D = 30,
+                NOT_HDL = 177,
+                LDL = 145,
+                triglycerides = 80,
+                uricAcid = 6.3f,
+                status = ExamStatus.Normal
             )
         )
     }
 
+    fun logout() {
+        authUseCase.logout()
+    }
 
 }

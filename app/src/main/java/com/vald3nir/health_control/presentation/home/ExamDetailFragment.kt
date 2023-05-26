@@ -2,16 +2,15 @@ package com.vald3nir.health_control.presentation.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
-import com.vald3nir.commons.R as RCommons
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.isVisible
 import com.vald3nir.core_ui.CoreFragment
 import com.vald3nir.health_control.R
+import com.vald3nir.health_control.data.enums.ExamDetailState
 import com.vald3nir.health_control.databinding.FragmentExamDetailBinding
 import org.koin.androidx.viewmodel.ext.android.sharedViewModel
-
-enum class ExamDetailState { SeeExam, EditExam, NewExam }
+import com.vald3nir.commons.R as RCommons
 
 
 class ExamDetailFragment : CoreFragment() {
